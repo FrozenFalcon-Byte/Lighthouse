@@ -9,6 +9,11 @@
     --max-width: 1500px;
 }
 
+::selection {
+    background-color: var(--white);
+    color: black;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -549,6 +554,14 @@ textarea:focus {
 .contact-info p {
     margin-bottom: 10px;
     font-size: 1.2rem;
+}
+
+.contact-info a {
+    color: white;
+}
+
+.contact-info a:hover {
+    color: var(--primary-color);
 }
 
 .contact-info i {
