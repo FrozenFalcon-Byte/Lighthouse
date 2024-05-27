@@ -249,11 +249,11 @@ nav {
 
 .magazine_swiper {
     margin-top: 2rem;
-    max-width: 900px;
+    max-width: var(--max-width);
     /* max-height: 70vw; */
     margin-inline: auto;
     padding: 3rem 1rem;
-    overflow: hidden;
+    /* overflow: hidden; */
     box-shadow: 5px 5px 10px rgba(252, 9, 9, 0.14);
     border-radius: 2rem;
 }
@@ -285,6 +285,10 @@ nav {
 
 .swiper-pagination-bullet {
     background: var(--white);
+}
+
+.swiper-slide {
+    max-width: 600px;
 }
 
 .swiper-pagination-bullet-active {
