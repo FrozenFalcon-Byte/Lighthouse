@@ -319,7 +319,7 @@ nav {
     position: relative;
     /* background-color: #6efc09; */
     border-radius: 6px;
-    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.14);
+    box-shadow: 1px 1px 15px rgba(255, 0, 0, 0.06);
 }
 
 .left-container {
@@ -405,6 +405,236 @@ nav {
     padding: 1rem 3rem;
 }
 
+.team {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.team-content {
+    width: 100%;
+    max-width: var(--max-width);
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, auto));
+    align-items: center;
+    gap: 2rem;
+    text-align: center;
+    margin-top: 4rem;
+}
+
+.team-content img {
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+    margin-bottom: 15px;
+}
+
+.center h1 {
+    color: var(--white);
+    font-size: 4rem;
+    text-align: center;
+}
+
+.box {
+    padding: 16px;
+    background: var(--text-dark);
+    border-radius: 15px;
+    transition: all .38s ease;
+}
+
+.box h3 {
+    font-size: 23px;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+.box h5 {
+    font-size: 15px;
+    font-weight: 700;
+    margin-bottom: 15px;
+    letter-spacing: 2px;
+}
+
+.box:hover {
+    transform: translateY(-10px);
+    cursor: pointer;
+}
+
+.contact {
+    min-height: 100vh;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    text-align: center;
+    padding: 50px;
+}
+
+.container1 {
+    max-width: var(--max-width);
+    margin: 0 auto;
+}
+
+.container1 h2 {
+    font-size: 3rem;
+    margin-bottom: 40px;
+}
+
+.contact-wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 100px;
+}
+
+.contact-form {
+    text-align: left;
+}
+
+.contact-form h3 {
+    font-size: 2.2rem;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 1.3rem;
+    border-radius: 8px;
+    border: none;
+}
+
+input:focus,
+textarea:focus {
+    outline: none;
+    box-shadow: 0 0 8px #bbb;
+}
+
+.contact button {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: var(--primary-color);
+    border: none;
+    cursor: pointer;
+    font-weight: 800;
+    color: var(--white);
+    background-color: var(--primary-color);
+    font-size: 1rem;
+    border-radius: 20px;
+    transition: all .3s ease;
+}
+
+.contact button:hover {
+    color: black;
+    background-color: var(--white);
+    transform: translateY(-10px);
+}
+
+.contact-info {
+    text-align: left;
+}
+
+.contact-info h3 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.contact-info p {
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+}
+
+.contact-info i {
+    color: var(--primary-color);
+}
+
+.footer {
+    background-color: var(--text-dark);
+}
+
+.footer-container {
+    display: grid;
+    gap: 3rem 2rem;
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+
+.footer_logo {
+    margin-bottom: 1rem;
+    text-align: left;
+}
+
+.footer_col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.footer_col h4 {
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--white);
+}
+
+.footer_links {
+    display: grid;
+    gap: 0.75rem;
+}
+
+.footer_links a {
+    color: var(--white);
+}
+
+.footer_links a:hover {
+    color: var(--primary-color);
+}
+
+.footer_bar {
+    padding: 1rem;
+    font-size: 0.9rem;
+    color: darkgray;
+    text-align: center;
+}
+
+.footer_links {
+    text-align: center;
+}
+
+@media(width>540px) {
+    .footer_container {
+        grid-template-columns: 2fr repeat(3, 1fr);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .conatainer {
+        padding: 20px;
+    }
+    .contact-wrapper {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media(max-width: 1240px) {
+    .team {
+        width: 100%;
+        height: auto;
+        padding: 90px 2%;
+    }
+    .center h1 {
+        font-size: 3.2rem;
+    }
+}
+
 @media(width>768px) {
     nav {
         position: static;
@@ -475,6 +705,12 @@ nav {
         grid-area: 1/1/2/2;
     }
     .event_container h1 {
+        text-align: left;
+    }
+    .footer_col {
+        flex-direction: row;
+    }
+    .footer_links {
         text-align: left;
     }
 }
