@@ -205,7 +205,6 @@ nav {
 .about_image {
     display: flex;
     gap: 2rem;
-    /* adjust the gap to your desired value */
 }
 
 .about_image img {
@@ -215,12 +214,12 @@ nav {
     height: 25vw;
     object-fit: cover;
     border-radius: 20px;
-    transition: scale 0.3s ease-in-out;
+    transition: transform 0.3s ease-in-out;
     box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.14);
 }
 
 .about_image img:hover {
-    scale: 1.03;
+    transform: translateY(-10px);
 }
 
 .about_content .section_description {
@@ -234,10 +233,20 @@ nav {
     line-height: 2.5rem;
     color: var(--text-light);
     text-align: center;
+    transition: all .5s ease-in-out;
 }
 
 .about_content h1 span {
     color: var(--primary-color);
+    transition: all .5s ease-in-out;
+}
+
+.about_content h1:hover {
+    color: var(--primary-color);
+}
+
+.about_content h1:hover span {
+    color: var(--white);
 }
 
 .magazine_container {
@@ -255,7 +264,6 @@ nav {
 .magazine_swiper {
     margin-top: 2rem;
     max-width: var(--max-width);
-    /* max-height: 70vw; */
     margin-inline: auto;
     padding: 3rem 1rem;
     /* overflow: hidden; */
@@ -315,14 +323,11 @@ nav {
     padding: 10px 50px;
     position: relative;
     width: 50%;
-    /* border-radius: 1.2rem; */
-    /* box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.14); */
 }
 
 .textbox {
     padding: 1rem 1.2rem;
     position: relative;
-    /* background-color: #6efc09; */
     border-radius: 6px;
     box-shadow: 1px 1px 15px rgba(255, 0, 0, 0.06);
 }
@@ -358,6 +363,7 @@ nav {
 }
 
 .timeline::after {
+    transition: height 1s;
     content: '';
     position: absolute;
     width: .7rem;
@@ -368,7 +374,7 @@ nav {
     margin-left: -3px;
     border-radius: 10px;
     z-index: 7;
-    animation: moveline 1s linear forwards;
+    /* animation: moveline 1s linear forwards; */
 }
 
 @keyframes moveline {
@@ -472,9 +478,6 @@ nav {
 
 .contact {
     min-height: 100vh;
-    /* display: flex;
-    justify-content: center;
-    align-items: center; */
     text-align: center;
     padding: 50px;
 }
@@ -620,6 +623,10 @@ textarea:focus {
 
 .footer_links {
     text-align: center;
+}
+
+.timeline {
+    overflow: hidden;
 }
 
 @media(width>540px) {

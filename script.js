@@ -48,6 +48,19 @@ ScrollReveal().reveal(".about_content .section_description", {
     delay: 1000,
 });
 
+ScrollReveal().reveal('.reveal-left', {
+    ...scrollRevealOption,
+    origin: "left",
+    delay: 200,
+});
+
+ScrollReveal().reveal('.reveal-right', {
+    ...scrollRevealOption,
+    origin: "right",
+    delay: 400,
+});
+
+
 
 var MagazineSlider = new Swiper('.swiper', {
     effect: 'coverflow',
