@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap');
 :root {
-    --primary-color: #fc098b;
+    --primary-color: #af09fc;
     --primary-color-light: #fffcfa;
-    --primary-color-dark: #a709db;
+    --primary-color-dark: #db0980;
     --text-dark: #18181b;
     --text-light: #6b7280;
     --white: #ffffff;
@@ -271,7 +271,8 @@ nav {
     border-radius: 2rem;
 }
 
-.swiper {
+.swiper1 {
+    overflow: hidden;
     padding-bottom: 1rem;
     width: 100%;
 }
@@ -612,7 +613,8 @@ textarea:focus {
 }
 
 .footer_links a:hover {
-    color: var(--primary-color);
+    color: var(--primary-color-dark);
+    /* scale: 1.05; */
 }
 
 .footer_bar {
@@ -627,6 +629,94 @@ textarea:focus {
 }
 
 .timeline {
+    overflow: hidden;
+}
+
+.card-image {
+    position: relative;
+    height: 25rem;
+    /* width: 25rem; */
+    /* padding: 2rem; */
+}
+
+.card-image .card-img {
+    height: 100%;
+    /* width: 100%; */
+    object-fit: cover;
+    border-radius: 2rem;
+    box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.4);
+}
+
+.super-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card {
+    width: 60rem;
+    border-radius: 20px;
+    background-color: #18181b;
+}
+
+.slide-content {
+    margin: 0 40px;
+}
+
+.image-content,
+.card-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem 3rem;
+}
+
+.image-content {
+    position: relative;
+    row-gap: 5px;
+    padding-bottom: 1.2rem 0;
+}
+
+.description {
+    text-align: center;
+}
+
+.overlay {
+    border-radius: 2rem 2rem 0 3rem;
+    position: absolute;
+    background-color: var(--primary-color);
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.overlay::before,
+.overlay::after {
+    content: '';
+    position: absolute;
+    right: 0;
+    bottom: -40px;
+    height: 40px;
+    width: 40px;
+    background-color: var(--primary-color);
+}
+
+.overlay::after {
+    border-radius: 0 3rem 0 0;
+    background-color: #18181b;
+}
+
+.slide-container {
+    position: relative;
+    width: 100%;
+    /* background-color: red; */
+    padding: 50px 0;
+    /* overflow: hidden; */
+}
+
+.swiper2 {
+    width: 100%;
     overflow: hidden;
 }
 
@@ -764,4 +854,23 @@ textarea:focus {
         border-left: 0;
         left: -15px;
     }
+    .card {
+        padding-bottom: 0;
+    }
+}
+
+.card {
+    max-width: var(--max-width);
+    cursor: grab;
+}
+
+.slide-container {
+    padding-right: 5rem;
+}
+
+.swiper-pagination2 {
+    position: absolute;
+    text-align: center;
+    margin: 0 auto;
+    display: block;
 }

@@ -62,7 +62,7 @@ ScrollReveal().reveal('.reveal-right', {
 
 
 
-var MagazineSlider = new Swiper('.swiper', {
+var MagazineSlider = new Swiper('.swiper1', {
     effect: 'coverflow',
     grabCursor: true,
     centeredSlides: true,
@@ -84,15 +84,14 @@ var MagazineSlider = new Swiper('.swiper', {
     }
 });
 
-// const swiper = new Swiper(".swiper", {
-//     loop: true,
 
-//     pagination: {
-//         el: ".swiper-pagination",
-//     },
 
-//     navigation: {
-//         nextEl: '.swiper-button-next',
-//         prevEl: '.swiper-button-prev',
-//     },
-// });
+var swiper = new Swiper(".swiper2", {
+    slidesPerView: 1,
+    spaceBetween: 50,
+    loop: true,
+    pagination: {
+        el: '.swiper-pagination2',
+        clickable: true,
+    }
+});
