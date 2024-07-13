@@ -93,5 +93,9 @@ var swiper = new Swiper(".swiper2", {
     pagination: {
         el: '.swiper-pagination2',
         clickable: true,
+    },
+    navigation: {
+        nextEl: '.next-elem',
+        prevEl: '.prev-elem'
     }
 });

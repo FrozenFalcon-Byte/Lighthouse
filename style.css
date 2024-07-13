@@ -888,3 +888,61 @@ textarea:focus {
     margin: 0 auto;
     display: block;
 }
+
+@media(width>768px) {
+    .card {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    .card-image {
+        flex: 1;
+        margin-right: 20px;
+    }
+    .overlay {
+        border-radius: 1.5rem 0 0.8rem 1.5rem;
+    }
+    .overlay::before,
+    .overlay::after {
+        display: none;
+    }
+    .card-content {
+        flex: 2;
+    }
+    .image-content {
+        max-width: 800px;
+    }
+}
+
+.new-btn {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 0.4rem;
+    line-height: 1rem;
+    background: #db0980;
+    cursor: pointer;
+    /* font-weight: 600; */
+    margin: 1.2rem;
+    padding: 0.8rem;
+    border-radius: 1rem;
+    box-shadow: 5px 5px 50px rgba(0, 0, 0, 0.4);
+    transition: all ease-in-out 0.3s;
+}
+
+.new-btn:hover {
+    transform: translateY(-3px);
+    background: white;
+    color: black;
+}
+
+.new-btn:active {
+    background: black;
+    color: white;
+}
+
+.btns {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
