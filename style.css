@@ -900,7 +900,7 @@ textarea:focus {
         margin-right: 20px;
     }
     .overlay {
-        border-radius: 1.5rem 0 0.8rem 1.5rem;
+        display: none;
     }
     .overlay::before,
     .overlay::after {
@@ -910,6 +910,8 @@ textarea:focus {
         flex: 2;
     }
     .image-content {
+        border-radius: 1.5rem 0 0.8rem 1.5rem;
+        background: #af09fc;
         max-width: 800px;
     }
 }

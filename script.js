@@ -93,9 +93,24 @@ var swiper = new Swiper(".swiper2", {
     pagination: {
         el: '.swiper-pagination2',
         clickable: true,
+        dynamicBullets: true,
+        dynamicMainBullets: 1,
     },
     navigation: {
         nextEl: '.next-elem',
         prevEl: '.prev-elem'
+    },
+    // autoplay: {
+    //     delay: 4000,
+    //     pauseOnMouseEnter: true,
+    //     disableOnInteraction: false,
+    // },
+    keyboard: {
+        enabled: true,
+    },
+    mousewheel: {
+        enabled: true,
+        forceToAxis: true,
+        sensitivity: 0.1,
     }
 });
