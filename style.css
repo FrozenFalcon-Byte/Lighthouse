@@ -748,7 +748,8 @@ textarea:focus {
 
 @media(width>768px) {
     nav {
-        position: static;
+        background: black;
+        position: fixed;
         padding: 2rem 1rem;
         max-width: var(--max-width);
         margin-inline: auto;
@@ -824,6 +825,14 @@ textarea:focus {
     .footer_links {
         text-align: left;
     }
+}
+
+.form-group input {
+    font-family: 'Poppins';
+}
+
+.form-group textarea {
+    font-family: 'Poppins';
 }
 
 @media(width<768px) {
