@@ -439,11 +439,28 @@ nav {
     margin-top: 4rem;
 }
 
+.teamCont {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
 .team-content img {
-    width: 100%;
-    height: auto;
+    object-position: 50% 40%;
+    object-fit: cover;
+    width: 11rem;
+    height: 8rem;
     border-radius: 15px;
     margin-bottom: 15px;
+}
+
+.sam img {
+    object-position: 50% 20%;
+}
+
+@media(width>768px) {
+    .team-content img {
+        width: 19rem;
+        height: 13rem;
+    }
 }
 
 .center h1 {
@@ -787,6 +804,7 @@ textarea:focus {
         color: var(--primary-color);
     }
     .header_container {
+        padding-top: 10rem;
         grid-template-columns: 4.5fr 3fr;
         align-items: center;
     }
